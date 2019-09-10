@@ -1,13 +1,12 @@
 import React from "react";
-import CounterHooks from "./components/CounterHooks";
 import Counter from "./components/Counter"
-
+// import CounterHooks from "./components/CounterHooks"
 
 const App = () => {
   return (
     <div>
       <Counter/>
-      <CounterHooks/>
+      {/* <CounterHooks/> */}
     </div> 
   );
 };

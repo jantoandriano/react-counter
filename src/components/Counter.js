@@ -1,6 +1,7 @@
 import React from 'react'
 import "../style.scss"
 import swal from "sweetalert"
+import Amount from "./Amount"
 
 
 export default class Counter extends React.Component {
@@ -12,26 +13,29 @@ export default class Counter extends React.Component {
   }
 
   incrementCount= () => {
+    const {counter} = this.state
     this.setState({
-      counter:this.state.counter+1
+      counter:counter+1
     })
   }
 
   decrementCount= () => {
-    if (this.state.counter == 0) {
+    const {counter} = this.state
+    if (counter == 0) {
       swal("BRO", "ngak boleh minus", "error");
     } else{
       this.setState({
-        counter : this.state.counter-1
+        counter : counter-1
       })
     }
   }
 
   render() {
+    const {counter} = this.state
     return (
       <div className="center">
         <h1 className="header">Counter</h1>
-        <h2>{this.state.counter}</h2>
+        <Amount count = {counter} title="Amount"/>
         <button className="btn btn-inc" onClick={this.incrementCount}>+</button>
         <button className="btn btn-dec" onClick={this.decrementCount}>-</button>
       </div>
