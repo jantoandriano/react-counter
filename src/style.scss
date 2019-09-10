@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+
+
+.header{
+    font-size: 4rem;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: 'Manjari', sans-serif;
+    color: coral;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-inc{
+    background-color: blue;
+    color: aliceblue;
+}
+.btn-dec{
+    background-color: crimson;
+    color: aliceblue;
+}

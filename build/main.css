@@ -1,11 +1,21 @@
-.wrapper {
-  align-items: center;
-  justify-content: center; }
+html {
+  box-sizing: border-box; }
 
-.text {
-  color: antiquewhite; }
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
 
-.wrapper {
-  align-items: center;
-  justify-content: center; }
+body {
+  background-size: cover;
+  font-size: 14px;
+  line-height: 1.6;
+  font-size: 14px;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+@media (max-width: 376px) {
+  body {
+    background-size: cover; } }
 
